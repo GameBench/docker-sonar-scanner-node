@@ -2,7 +2,7 @@ FROM node:alpine
 
 ENV SONAR_SCANNER_VERSION=3.2.0.1227
 ENV JAVA_HOME=/usr/lib/jvm/java-1.8-openjdk/jre
-ENV SONAR_SCANNER_OPTS="-Xmx512m -Dsonar.host.url=https://sonarqube.digital.homeoffice.gov.uk/"
+ENV SONAR_SCANNER_OPTS="-Xmx512m"
 ENV PATH $PATH:/sonar-scanner/bin:/usr/lib/jvm/java-1.8-openjdk/jre/bin:/usr/lib/jvm/java-1.8-openjdk/bin
 
 ADD "https://sonarsource.bintray.com/Distribution/sonar-scanner-cli/sonar-scanner-cli-${SONAR_SCANNER_VERSION}.zip" /
